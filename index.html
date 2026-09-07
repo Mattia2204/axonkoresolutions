@@ -1,141 +1,2121 @@
+```html
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <title>AxonKore Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="description"
+    content="AxonKore Solutions - Software, sistemi Linux, cybersecurity e soluzioni IT."
+>
+
+<title>AxonKore Solutions | Software & IT Solutions</title>
+
+
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f8;
-    }
 
-    header {
-        background-color: white;
-        color: #0b3d91;
-        padding: 15px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 2px solid #0b3d91;
-    }
+/* =========================================================
+   RESET
+========================================================= */
 
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo img {
-    height: 100px;
-    margin-right: 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-    nav a {
-    color: #0b3d91;
-    margin-left: 25px;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: 82px;
+
+    background: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #e5e9f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: #172033;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.25s;
 }
 
 nav a:hover {
-    color: #1e90ff;
+    color: #0b3d91;
 }
 
-    .section {
-        padding: 60px 40px;
-        background-color: white;
-        margin: 20px;
-        border-radius: 10px;
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 25px;
+
+    background:
+
+        radial-gradient(
+            circle at top right,
+            rgba(30,144,255,0.16),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(11,61,145,0.12),
+            transparent 35%
+        ),
+
+        #ffffff;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-badge {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: #edf4ff;
+
+    color: #0b3d91;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+
+    font-size: clamp(45px,7vw,78px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+
+    color: #101827;
+}
+
+.hero h1 span {
+    color: #0b3d91;
+}
+
+.hero p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+    color: #657084;
+
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.btn-primary {
+
+    background: #0b3d91;
+
+    color: white;
+}
+
+.btn-primary:hover {
+
+    background: #082f70;
+
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+
+    background: white;
+
+    color: #0b3d91;
+
+    border: 1px solid #d6dce6;
+}
+
+.btn-secondary:hover {
+
+    border-color: #0b3d91;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   GENERALE
+========================================================= */
+
+.section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-label {
+
+    color: #0b3d91;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.section h2 {
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+    color: #101827;
+}
+
+.section-description {
+
+    max-width: 750px;
+
+    color: #687386;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   CHI SIAMO
+========================================================= */
+
+.about {
+
+    background: white;
+
+    border-top: 1px solid #e8ebf0;
+
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-text p {
+
+    color: #647084;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.about-box {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0b3d91,
+            #1766d1
+        );
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 20px 50px rgba(11,61,145,0.20);
+}
+
+.about-box h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.about-box p {
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+/* =========================================================
+   SERVIZI
+========================================================= */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+
+    background: white;
+
+    border: 1px solid #e5e9f0;
+
+    border-radius: 15px;
+
+    padding: 32px;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px rgba(20,40,80,0.10);
+
+    border-color: #cdd9ed;
+}
+
+.service-icon {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #edf4ff;
+
+    color: #0b3d91;
+
+    font-size: 24px;
+
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+
+    color: #687386;
+}
+
+
+/* =========================================================
+   PRODOTTI
+========================================================= */
+
+.products {
+
+    background: #101827;
+
+    color: white;
+
+    max-width: none;
+
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.products-inner {
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.products .section-label {
+    color: #62a1ff;
+}
+
+.products h2 {
+    color: white;
+}
+
+.products .section-description {
+    color: #9ca8bb;
+}
+
+
+/* =========================================================
+   CATEGORIE PRODOTTI
+========================================================= */
+
+.product-category {
+
+    margin-top: 60px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.product-category h3 {
+
+    font-size: 22px;
+
+    color: white;
+}
+
+.product-category-line {
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #29364b;
+}
+
+
+/* =========================================================
+   GRIGLIA PRODOTTI
+========================================================= */
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+}
+
+.product-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #182235;
+
+    border: 1px solid #27344b;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #3f70b8;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.25);
+}
+
+.product-number {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #5e8fd2;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+
+    color: white;
+}
+
+.product-card p {
+
+    color: #aab4c5;
+
+    margin-bottom: 25px;
+}
+
+.product-tag {
+
+    margin-top: auto;
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 6px 12px;
+
+    background: #22314a;
+
+    color: #a9c9ff;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PRODOTTO IN EVIDENZA
+========================================================= */
+
+.featured-product {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #123c78,
+            #172235
+        );
+
+    border-color: #376db3;
+
+    min-height: 330px;
+}
+
+.featured-product .product-number {
+    color: #78b0ff;
+}
+
+.featured-product .product-tag {
+
+    background: rgba(98,161,255,0.15);
+
+    color: #8ec0ff;
+}
+
+
+/* =========================================================
+   TECNOLOGIE
+========================================================= */
+
+.technology {
+    background: white;
+}
+
+.technology-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+.tech-item {
+
+    padding: 28px;
+
+    background: #f6f8fb;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e9f0;
+}
+
+.tech-item h3 {
+
+    margin-bottom: 8px;
+
+    color: #172033;
+}
+
+.tech-item p {
+
+    color: #687386;
+}
+
+
+/* =========================================================
+   NUMERI / PORTFOLIO
+========================================================= */
+
+.stats {
+
+    background: #f5f7fa;
+
+    border-top: 1px solid #e5e9f0;
+
+    border-bottom: 1px solid #e5e9f0;
+}
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+
+    text-align: center;
+}
+
+.stat {
+
+    padding: 25px;
+}
+
+.stat-number {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #0b3d91;
+
+    line-height: 1;
+}
+
+.stat p {
+
+    margin-top: 10px;
+
+    color: #687386;
+}
+
+
+/* =========================================================
+   CONTATTI
+========================================================= */
+
+.contact {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0b3d91,
+            #092b64
+        );
+
+    color: white;
+
+    max-width: none;
+
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.contact-inner {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.contact h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 17px;
+}
+
+.contact-info {
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+
+    padding: 35px;
+}
+
+.contact-info div {
+
+    margin-bottom: 22px;
+}
+
+.contact-info div:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+}
+
+.contact-info a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #080f1c;
+
+    color: #8995a8;
+
+    padding: 35px 6%;
+}
+
+.footer-inner {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+
+    color: white;
+
+    font-weight: 800;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    nav {
+        gap: 15px;
     }
 
-    .services {
-        display: flex;
-        gap: 20px;
+    nav a {
+        font-size: 13px;
+    }
+
+    .about-grid,
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-grid,
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    header {
+
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+
         flex-wrap: wrap;
+
+        justify-content: center;
     }
 
-    .card {
-        background: #f4f6f8;
-        padding: 20px;
-        border-radius: 10px;
-        flex: 1;
-        min-width: 250px;
+    .hero {
+
+        min-height: 600px;
+
+        padding: 80px 20px;
     }
 
-    footer {
-        background-color: #0b3d91;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
+    .hero h1 {
+        letter-spacing: -2px;
     }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+
+    .products,
+    .contact {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .products-grid,
+    .services-grid,
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 36px;
+    }
+
+}
+
 </style>
+
 </head>
+
+
 <body>
 
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
 <header>
-    <div class="logo">
-        <img src="logo.png" alt="AxonKore Logo">
-        
-    </div>
+
+    <a href="#" class="logo">
+
+        <img
+            src="logo.png"
+            alt="AxonKore Solutions"
+        >
+
+    </a>
+
 
     <nav>
-        <a href="#chisiamo">Chi siamo</a>
+
+        <a href="#azienda">Azienda</a>
+
         <a href="#servizi">Servizi</a>
+
         <a href="#prodotti">Prodotti</a>
+
+        <a href="#tecnologie">Tecnologie</a>
+
         <a href="#contatti">Contatti</a>
+
     </nav>
+
 </header>
 
 
 
-<section id="chisiamo" class="section">
-    <h2>Chi siamo</h2>
-    <p>
-        AxonKore Solutions è una azienda italiana che realizza soluzioni informatiche personalizzate per aziende e professionisti.
-        Ci occupiamo di sviluppo software, sistemi Linux, automazione aziendale e infrastrutture IT.
-    </p>
-</section>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-<section id="servizi" class="section">
-    <h2>Servizi</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Software Gestionali</h3>
-            <p>Gestionali per magazzino, fatturazione, CRM e gestione aziendale.</p>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            SOFTWARE • LINUX • CYBERSECURITY • IT
         </div>
 
-        <div class="card">
-            <h3>Sviluppo Tool</h3>
-            <p>Software e strumenti personalizzati per aziende e professionisti.</p>
+
+        <h1>
+
+            Tecnologia che<br>
+
+            <span>costruisce il futuro.</span>
+
+        </h1>
+
+
+        <p>
+
+            AxonKore Solutions sviluppa software,
+            sistemi Linux, strumenti IT e soluzioni
+            personalizzate per aziende, professionisti
+            e utenti.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#prodotti"
+                class="btn btn-primary"
+            >
+                Esplora i prodotti
+            </a>
+
+
+            <a
+                href="#contatti"
+                class="btn btn-secondary"
+            >
+                Contattaci
+            </a>
+
         </div>
 
-        <div class="card">
-            <h3>Linux & Server</h3>
-            <p>Distribuzioni Linux personalizzate, server e infrastrutture IT.</p>
-        </div>
     </div>
+
 </section>
 
-<section id="prodotti" class="section">
-    <h2>Prodotti</h2>
-    <p>
-        Offriamo software gestionali, strumenti IT e sistemi Linux personalizzati
-        sviluppati internamente per migliorare la produttività aziendale.
-    </p>
+
+
+<!-- =========================================================
+     AZIENDA
+========================================================= -->
+
+<section
+    id="azienda"
+    class="about"
+>
+
+    <div class="section">
+
+        <div class="about-grid">
+
+
+            <div class="about-text">
+
+                <div class="section-label">
+                    Chi siamo
+                </div>
+
+
+                <h2>
+                    Software pensato
+                    per problemi reali.
+                </h2>
+
+
+                <p>
+
+                    AxonKore Solutions è una software
+                    house italiana focalizzata sulla
+                    progettazione e realizzazione di
+                    soluzioni informatiche.
+
+                </p>
+
+
+                <p>
+
+                    Dallo sviluppo di software gestionali
+                    alla realizzazione di sistemi Linux,
+                    tool per sviluppatori e applicazioni
+                    dedicate, trasformiamo esigenze
+                    concrete in strumenti digitali.
+
+                </p>
+
+
+                <p>
+
+                    Il nostro obiettivo è creare software
+                    utile, intuitivo e funzionale,
+                    evitando complessità inutili.
+
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>
+                    Un ecosistema software.
+                </h3>
+
+
+                <p>
+
+                    AxonKore Solutions sviluppa
+                    prodotti destinati a settori
+                    differenti: cybersecurity,
+                    gestione aziendale, produttività,
+                    sviluppo software, collezionismo,
+                    finanza personale e molto altro.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contatti" class="section">
-    <h2>Contatti</h2>
-    <p>Email: info@axonkoresolutions.com</p>
-    <p>Telefono: +39 351 919 6106</p>
+
+
+<!-- =========================================================
+     SERVIZI
+========================================================= -->
+
+<section
+    id="servizi"
+    class="section"
+>
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Cosa facciamo
+        </div>
+
+
+        <h2>
+            Soluzioni IT su misura.
+        </h2>
+
+
+        <p class="section-description">
+
+            Dallo sviluppo software all'infrastruttura,
+            realizziamo strumenti progettati per
+            rispondere alle esigenze specifiche
+            dei nostri clienti.
+
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💻
+            </div>
+
+            <h3>
+                Software Gestionali
+            </h3>
+
+            <p>
+
+                Applicazioni per librerie, negozi,
+                magazzini, associazioni e attività
+                professionali.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ⚙️
+            </div>
+
+            <h3>
+                Sviluppo Software
+            </h3>
+
+            <p>
+
+                Tool e applicazioni personalizzate
+                progettate per automatizzare attività
+                e migliorare la produttività.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🐧
+            </div>
+
+            <h3>
+                Linux & Server
+            </h3>
+
+            <p>
+
+                Sistemi Linux, server, infrastrutture
+                IT e soluzioni dedicate ad ambienti
+                professionali.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Cybersecurity
+            </h3>
+
+            <p>
+
+                Strumenti e soluzioni orientati
+                alla sicurezza informatica e
+                all'amministrazione dei sistemi.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🔄
+            </div>
+
+            <h3>
+                Automazione
+            </h3>
+
+            <p>
+
+                Automatizziamo attività ripetitive
+                per ridurre gli errori e migliorare
+                l'efficienza.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🚀
+            </div>
+
+            <h3>
+                Soluzioni Personalizzate
+            </h3>
+
+            <p>
+
+                Progettiamo software specifici
+                invece di costringere il problema
+                ad adattarsi al software.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
 </section>
+
+
+
+<!-- =========================================================
+     PRODOTTI
+========================================================= -->
+
+<section
+    id="prodotti"
+    class="products"
+>
+
+<div class="products-inner">
+
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Portfolio
+        </div>
+
+
+        <h2>
+            I nostri prodotti.
+        </h2>
+
+
+        <p class="section-description">
+
+            Una raccolta di software, strumenti
+            e sistemi sviluppati da AxonKore Solutions.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CYBERSECURITY & SISTEMI
+    ====================================================== -->
+
+    <div class="product-category">
+
+        <h3>
+            Cybersecurity & Sistemi
+        </h3>
+
+        <div class="product-category-line"></div>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <div class="product-card featured-product">
+
+            <div class="product-number">
+                01 / OPERATING SYSTEM
+            </div>
+
+
+            <h3>
+                DeviceOS
+            </h3>
+
+
+            <p>
+
+                Una distribuzione Linux progettata
+                per cybersecurity, system administration
+                e attività tecniche.
+
+            </p>
+
+
+            <span class="product-tag">
+                LINUX • CYBERSECURITY
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                02 / SYSTEM TOOL
+            </div>
+
+
+            <h3>
+                TuxWin
+            </h3>
+
+
+            <p>
+
+                Software dedicato allo scambio
+                di file tra una macchina Linux
+                e una macchina Windows.
+
+            </p>
+
+
+            <span class="product-tag">
+                LINUX • WINDOWS • FILE TRANSFER
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BUSINESS SOFTWARE
+    ====================================================== -->
+
+    <div class="product-category">
+
+        <h3>
+            Business & Gestionali
+        </h3>
+
+        <div class="product-category-line"></div>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                03 / BUSINESS SOFTWARE
+            </div>
+
+
+            <h3>
+                AxonBooks
+            </h3>
+
+
+            <p>
+
+                Gestionale per librerie progettato
+                per organizzare cataloghi, magazzino,
+                prodotti e attività di vendita.
+
+            </p>
+
+
+            <span class="product-tag">
+                GESTIONALE • LIBRERIE
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                04 / BUSINESS SOFTWARE
+            </div>
+
+
+            <h3>
+                AxonRecords
+            </h3>
+
+
+            <p>
+
+                Gestionale dedicato ai negozi di dischi
+                per organizzare cataloghi musicali,
+                inventario e attività commerciali.
+
+            </p>
+
+
+            <span class="product-tag">
+                GESTIONALE • MUSICA
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                05 / INVENTORY SOFTWARE
+            </div>
+
+
+            <h3>
+                AxonWarehouse
+            </h3>
+
+
+            <p>
+
+                Software dedicato alla gestione
+                e organizzazione dei magazzini
+                e delle relative operazioni.
+
+            </p>
+
+
+            <span class="product-tag">
+                GESTIONALE • MAGAZZINO
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                06 / ORGANIZATION SOFTWARE
+            </div>
+
+
+            <h3>
+                ANAManager
+            </h3>
+
+
+            <p>
+
+                Gestionale progettato per la gestione
+                di una sezione di Alpini e delle
+                relative attività organizzative.
+
+            </p>
+
+
+            <span class="product-tag">
+                GESTIONALE • ORGANIZZAZIONE
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                07 / LIBRARY SOFTWARE
+            </div>
+
+
+            <h3>
+                BookLegacy
+            </h3>
+
+
+            <p>
+
+                Gestionale semplice e immediato
+                dedicato alla gestione delle librerie.
+
+            </p>
+
+
+            <span class="product-tag">
+                GESTIONALE • LIBRERIE
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PRODUTTIVITÀ & PERSONALE
+    ====================================================== -->
+
+    <div class="product-category">
+
+        <h3>
+            Produttività & Gestione personale
+        </h3>
+
+        <div class="product-category-line"></div>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                08 / COLLECTION SOFTWARE
+            </div>
+
+
+            <h3>
+                Archivum
+            </h3>
+
+
+            <p>
+
+                Gestore di collezioni pensato
+                per organizzare e catalogare
+                oggetti e raccolte personali.
+
+            </p>
+
+
+            <span class="product-tag">
+                COLLECTIONS • CATALOGING
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                09 / PERSONAL FINANCE
+            </div>
+
+
+            <h3>
+                Pekulux Manager
+            </h3>
+
+
+            <p>
+
+                Software per la gestione della
+                finanza personale, delle proprie
+                entrate, uscite e organizzazione economica.
+
+            </p>
+
+
+            <span class="product-tag">
+                FINANZA • PERSONAL MANAGEMENT
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                10 / PRODUCTIVITY
+            </div>
+
+
+            <h3>
+                Taskan
+            </h3>
+
+
+            <p>
+
+                Task manager multifunzione progettato
+                per organizzare attività, progetti
+                e impegni.
+
+            </p>
+
+
+            <span class="product-tag">
+                PRODUCTIVITY • TASK MANAGEMENT
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                11 / EDUCATION
+            </div>
+
+
+            <h3>
+                LingoLab
+            </h3>
+
+
+            <p>
+
+                Software dedicato allo studio
+                delle lingue straniere e
+                all'apprendimento linguistico.
+
+            </p>
+
+
+            <span class="product-tag">
+                EDUCATION • LANGUAGES
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         DEVELOPER TOOLS
+    ====================================================== -->
+
+    <div class="product-category">
+
+        <h3>
+            Developer Tools
+        </h3>
+
+        <div class="product-category-line"></div>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <div class="product-card featured-product">
+
+            <div class="product-number">
+                12 / DEVELOPER TOOL
+            </div>
+
+
+            <h3>
+                EdenStudio
+            </h3>
+
+
+            <p>
+
+                Un IDE multipurpose per sviluppare
+                applicazioni in Python, Java, C,
+                C++, VB.NET, VBS e Batch, oltre
+                a Web App con HTML, CSS e JavaScript.
+
+            </p>
+
+
+            <span class="product-tag">
+                IDE • DEVELOPMENT • WEB
+            </span>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-number">
+                13 / DATA TOOL
+            </div>
+
+
+            <h3>
+                DBXel
+            </h3>
+
+
+            <p>
+
+                Tool progettato per trasformare
+                un file Excel in una struttura
+                database.
+
+            </p>
+
+
+            <span class="product-tag">
+                DATABASE • EXCEL • DATA
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats">
+
+    <div class="section">
+
+        <div class="stats-grid">
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    13+
+                </div>
+
+                <p>
+                    Prodotti software sviluppati
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    5
+                </div>
+
+                <p>
+                    Aree applicative
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    1
+                </div>
+
+                <p>
+                    Ecosistema software
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TECNOLOGIE
+========================================================= -->
+
+<section
+    id="tecnologie"
+    class="technology"
+>
+
+    <div class="section">
+
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Tecnologia
+            </div>
+
+
+            <h2>
+                Costruito con tecnologia.
+            </h2>
+
+
+            <p class="section-description">
+
+                Utilizziamo tecnologie moderne,
+                sistemi Linux e strumenti open source
+                per realizzare soluzioni flessibili
+                e mantenibili.
+
+            </p>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Linux
+                </h3>
+
+                <p>
+
+                    Sistemi Linux e ambienti server
+                    progettati per stabilità,
+                    controllo e sicurezza.
+
+                </p>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Web Technologies
+                </h3>
+
+                <p>
+
+                    HTML, CSS e JavaScript per
+                    applicazioni web moderne
+                    e accessibili.
+
+                </p>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+
+                    Python, Java, C, C++, VB.NET,
+                    VBS e Batch per differenti
+                    esigenze di sviluppo.
+
+                </p>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Database & Data
+                </h3>
+
+                <p>
+
+                    Strumenti per la gestione,
+                    trasformazione e organizzazione
+                    dei dati.
+
+                </p>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Open Source
+                </h3>
+
+                <p>
+
+                    Utilizziamo e sviluppiamo
+                    soluzioni basate anche
+                    sull'ecosistema open source.
+
+                </p>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <h3>
+                    Cross Platform
+                </h3>
+
+                <p>
+
+                    Soluzioni pensate per lavorare
+                    con differenti sistemi operativi
+                    e ambienti tecnologici.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTATTI
+========================================================= -->
+
+<section
+    id="contatti"
+    class="contact"
+>
+
+    <div class="contact-inner">
+
+
+        <div>
+
+            <div class="section-label">
+                Contatti
+            </div>
+
+
+            <h2>
+                Hai un progetto
+                in mente?
+            </h2>
+
+
+            <p>
+
+                Raccontaci cosa vuoi realizzare
+                e vediamo insieme come trasformare
+                l'idea in una soluzione concreta.
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-info">
+
+
+            <div>
+
+                <strong>
+                    Email
+                </strong>
+
+                <a href="mailto:info@axonkoresolutions.com">
+
+                    info@axonkoresolutions.com
+
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Telefono
+                </strong>
+
+                <a href="tel:+393519196106">
+
+                    +39 351 919 6106
+
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Azienda
+                </strong>
+
+                AxonKore Solutions
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
-    <p>© 2026 AxonKore Solutions</p>
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+            AxonKore Solutions
+        </div>
+
+
+        <div>
+
+            © 2026 AxonKore Solutions.
+            Tutti i diritti riservati.
+
+        </div>
+
+
+    </div>
+
 </footer>
 
+
 </body>
+
 </html>
+```
